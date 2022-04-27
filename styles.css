@@ -1,0 +1,50 @@
+body {
+  background-color: red;
+}
+
+.uno {
+  background-color: #4285F4;
+  color: white;
+}
+
+.dos {
+  background-color: #E67E22;
+  color: white;
+}
+
+div {
+  text-align: center;
+  padding: 2rem;
+  margin: .5rem;
+}
+
+.cuadrado-1 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.cuadrado-2 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.large, .basic {
+  font-size: 30px;
+  color: white;
+}
+
+.basic {
+  border: solid 1px;
+  width: 100px;
+}
+
+.basic .medium {
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.css.map */

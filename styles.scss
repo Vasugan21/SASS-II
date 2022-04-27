@@ -1,0 +1,61 @@
+body{
+    background-color: red;
+}
+
+$estilos: (
+  azul: #4285F4,
+  naranja: #E67E22
+);
+
+@mixin fondo($color){
+  @if map-has-key($estilos, $color){
+    background-color: map-get($estilos, $color);
+  } 
+}
+
+.uno{
+  @include fondo(azul);
+  color: white;
+}
+.dos{
+  @include fondo(naranja);
+  color: white;
+}
+
+div {
+  text-align: center;
+  padding: 2rem;
+  margin: .5rem;
+}
+
+@mixin cuadrado {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.cuadrado-1{
+    @include cuadrado;
+}
+
+.cuadrado-2{
+    @include cuadrado;
+}
+
+.large{
+    font-size: 30px;
+    color: white;
+}
+
+.basic{
+    @extend .large;
+    border:solid 1px;
+    width: 100px;
+
+.medium{
+    @include font-basic(500);
+    font-weight: 700;
+}    
+}
